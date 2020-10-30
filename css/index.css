@@ -205,22 +205,42 @@ p {
   border-bottom: 1px dashed black;
 }
 
-.topAbout p {
+.topAbout p,
+.aboutBottom p {
   margin-bottom: 20px;
+  width: 100%;
 }
 
-.aboutInfo {
+.aboutInfo,
+.aboutBottom {
   display: flex;
+  width: 45%;
   flex-direction: column;
-  border-bottom: 1px dotted black;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .aboutInfo img,
 h2,
 p,
 button {
-  width: 50%;
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  flex-wrap: wrap;
   flex-direction: row;
+}
+
+.aboutInfo button {
+  border-radius: 10%;
+  padding: 2%;
+  width: 100px;
+  margin-top: 2%;
+}
+
+#about {
+  border-bottom: 1px dashed black;
+  margin-bottom: 2%;
 }
 
 .aboutBottom {
